@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra Michelle Vilar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"
+        async="" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MENU HOME -->
+            <div class="col-lg-12" id="inicio">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-dark col-12 col-lg-12 navbar-fixed-top">
+                    <img id="image-navbar" src="../assets/logo michelle.svg" alt="logo doutora michele">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-color" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color" href="#tratamentos">Tratamentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color"
+                                    href="https://www.doctoralia.com.br/michelle-vilar/psiquiatra/sao-paulo"
+                                    target="_blank">Agende sua
+                                    Consulta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color" href="#localizacao">Localização</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-lg-10 offset-lg-1 ">
+                    <div class="row">
+                        <h1 class="col-lg-6 text-color-all">Cuidando da sua <br> saúde mental para <br> transformar
+                            sua vida</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRATAMENTOS -->
+            <div class="col-lg-12" id="tratamentos">
+                <div class="col-lg-10 offset-lg-1 col-12">
+                    <h2 class="text-center">Tratamentos</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-6 text-center" v-for="portfolio in portfolios">
+                            <img class="col-lg-4 mt-5" :src="portfolio.linkfoto" alt="eWorld Portfólio">
+                            <h5>{{portfolio.nome}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SERVIÇOS -->
+            <div class="col-lg-12 mt-5 mb-5" id="servicos">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <div class="col-lg-5 mt-5">
+                            <h2>Serviços</h2>
+                            <h3 class="mt-4">Consulta Presencial</h3>
+                            <p>Avaliação médica especializada com duração de 50 minutos para dar o diagnóstico e
+                                estabelecer o plano de tratamento.</p>
+                            <h3 class="mt-4">Sessão de Terapia</h3>
+                            <p>Atendimento terapêutico com duração de 50 minutos e abordagem cognitivo-comportamental.
+                            </p>
+
+                            <a class="btn btn-info"
+                                href="https://www.doctoralia.com.br/michelle-vilar/psiquiatra/sao-paulo"
+                                target="_blank">Agende sua consulta</a>
+                        </div>
+                        <img src="../img/foto consultório.png" alt="consultorio" class="col-lg-7">
+                    </div>
+                </div>
+            </div>
+            <!-- CONSULTA TELE-->
+            <div class="col-lg-12">
+                <div class="col-lg-10 offset-lg-1 mt-5">
+                    <div class="row">
+                        <img class="col-lg-4" src="../assets/telemedicina.svg" alt="telemedicina">
+
+                        <div class="col-lg-8 mt-5 pt-2">
+                            <h3>Consulta Telemedicina</h3>
+                            <p class="mt-4">Esta modalidade de atendimento caracteriza-se pela prestação de serviços
+                                médicos a distância por meio de uso de modernas tecnologias digitais como a chamada de
+                                vídeo.</p>
+                            <a class="btn btn-info"
+                                href="https://www.doctoralia.com.br/michelle-vilar/psiquiatra/sao-paulo"
+                                target="_blank">Agende sua
+                                consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  SOBRE -->
+            <div class="col-lg-12 mt-5" id="sobre">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <div id="sobre-texto" class="col-lg-6 mt-4">
+                            <h2>Sobre</h2>
+                            <p>
+                                Graduada em medicina pela Faculdade de Ciências Médicas da Universidade de Alfenas em
+                                1998.
+                                <br><br>
+                                Pós Graduada em Psiquiatria pela Faculdade de Ciências Médicas da Santa Casa de São
+                                Paulo
+                                <br><br>
+                                Especialista em Terapia Cognitivo Comportamental pelo Centro de Estudos de Terapia
+                                Cognitivo Comportamental de São Paulo.
+                            </p>
+                        </div>
+                        <img src="../img/foto sobre.png" alt="" class="col-lg-4">
+                    </div>
+                </div>
+
+            </div>
+            <!--DEPOIMENTOS-->
+            <div class="col-lg-12">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="text-center mt-5">Depoimentos</h2>
+                    <div class="row mt-5">
+                        <div class="col-lg-4 text-center">
+                            <img class="ic-depo" src="../assets/andreia.svg">
+                            <p>Maria</p>
+                            <img class="ic-star" src="../img/estrelas.png">
+                            <p class="text-default">"Profissional humana que acolhe o paciente. Procurou oferecer o
+                                melhor
+                                tratamento de forma muita tranquila, me deixando segura."</p>
+                        </div>
+                        <div class="col-lg-4 text-center border-radius-verde">
+                            <img class="ic-depo" src="../assets/Daniel.svg">
+                            <p class="text-white">Daniel</p>
+                            <img class="ic-star" src="../img/estrelas.png">
+                            <p class="text-white">"Doutora excelente, atenciosa, me explicou todo o tratamento com
+                                clareza e segurança. Além disso, suas consultas são demoradas, fazendo com que o
+                                paciente retire todas as dúvidas. Nota 10."</p>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <img class="ic-depo" src="../assets/helen.svg">
+                            <p>Andreia</p>
+                            <img class="ic-star" src="../img/estrelas.png">
+                            <p class="text-default">"Senti muita empatia desde o primeiro contato. A sensibilidade e o
+                                respeito ao tempo do paciente foi o diferencial no atendimento personalizado que
+                                recebi."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CONTATO-->
+            <div class="col-lg-12 mt-5 pb-5" id="fale-conosco">
+                <div class="col-lg-10 offset-lg-1 mt-5">
+                    <h2 class="text-center">Fale Conosco</h2>
+                    <div class="row mt-5">
+                        <div class="col-lg-6">
+                            <p class="text-white">Agende sua consulta:</p>
+                            <a href="https://www.doctoralia.com.br/michelle-vilar/psiquiatra/sao-paulo" target="_blank"
+                                rel="noopener noreferrer">
+                                <img id="doctoralia" src="../assets/doctoralia.svg" alt="doctoralia" class="col-lg-5">
+                            </a>
+                            <p class="mt-4 text-white">Fale direto por Whatsapp com o consultório:</p>
+                            <a href="https://wa.me/5511940702215" target="_blank">
+                                <h4 class="text-center">(11) 94070-2215</h4>
+                            </a>
+                            <p class="mt-4 text-white">Envie sua mensagem por email</p>
+                            <a href="mailto:dravilarmichelle@gmail.com">
+                                <h4 class="text-center h4-email">dravilarmichelle@gmail.com</h4>
+                            </a>
+                            <span class="row mt-4">
+                                <p class="text-white col-lg-6 p-redes">Me siga nas redes sociais:</p>
+                                <a href="https://www.facebook.com/vilarmichelle/" target="_blank">
+                                    <img class="ic-redes" src="../img/face.png" alt="">
+                                </a>
+                                <a class="col-lg-2" href="https://www.instagram.com/vilarmichelle/" target="_blank">
+                                    <img class="ic-redes" src="../img/insta.png" alt="">
+                                </a>
+                            </span>
+                        </div>
+                        <form class="col-lg-6" id="form">
+                            <p class="text-white">Se desejar nos enviar alguma dúvida ou sugestão, mande uma mensagem
+                                para nós que teremos enorme prazer em ouvi-lo.</p>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputNome"></label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputTelefone"></label>
+                                    <input type="phone" class="form-control" id="inputTelefone"
+                                        placeholder="Telefone (obrigatório)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail"></label>
+                                <input type="email" class="form-control" id="inputEmail"
+                                    placeholder="Email (obrigatório)">
+                            </div>
+                            <div class="form-group">
+                                <label for="faMensagem"></label>
+                                <textarea class="form-control" id="faMensagem" rows="3"></textarea>
+                            </div>
+                            <button @click="enviarEmailForm()" type="submit"
+                                class="btn btn-info float-right">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--FORM-->
+            <div class="col-lg-12 mt-5" id="localizacao">
+                <h2 class="text-center">Localização</h2>
+                <div class="col-lg-10 offset-lg-1 mt-5">
+                    <div class="row">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.68903292566!2d-46.63977928535358!3d-23.651305070804412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5adca8043d13%3A0x3643569144bcc7be!2sGreen%20Work%20Boulevard%20Jabaquara!5e0!3m2!1spt-BR!2sbr!4v1595332318404!5m2!1spt-BR!2sbr"
+                            class="col-lg-8" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                        <span class="col-lg-4">
+                            <p><i class="fa fa-paper-plane cor-verde" aria-hidden="true"></i> Green Work Boulevard
+                                Jabaquara Av. Eng. Armando de Arruda Perreira, 2937, Cj 419 bloco C | Jabaquara | São
+                                Paulo - SP | Cep: 04309-011</p>
+                            <p style="cursor: pointer; text-decoration: underline;"
+                                onclick="window.open('https://www.waze.com/ul?place=ChIJEz0EqNxazpQRvse8RJFWQzY&ll=-23.65131000%2C-46.63759060&navigate=yes');">
+                                <i class="fa fa-map-marker cor-verde" aria-hidden="true"></i> Waze - Green Work
+                                Boulevard
+                                Jabaquara Estacionamento no local</p>
+                            <p><i class="fas fa-subway cor-verde"></i> Metro - Saindo do metro Jabaquara, Caminhe pela
+                                avenida sentido Habibs. 800m - 10 a 15 minutos de caminhada.</p>
+                        </span class="col-lg-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="col-lg-12 mt-5">
+        <div class="col-lg-10 offset-lg-1 mt-5 pb-3">
+            <div class="row">
+                <p class="text-white col-lg-4 mt-4 col-12">Me siga nas redes sociais:
+                    <a href="https://www.facebook.com/vilarmichelle/" target="_blank">
+                        <img class="ic-redes" src="../img/face.png" alt="">
+                    </a>
+                    <a class="col-lg-2" href="https://www.instagram.com/vilarmichelle/" target="_blank">
+                        <img class="ic-redes" src="../img/insta.png" alt="">
+                    </a>
+                </p>
+                <p class="text-white col-lg-8 mt-4 text-right">Copyright Dra. Michelle Vilar - Desenvolvido pelo Grupo
+                    Eworld
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script>
+        new Vue({
+            el: '#tratamentos',
+            data: {
+                portfolios: [
+                    { linkfoto: 'img/flower.png', nome: 'Ansiedade' },
+                    { linkfoto: 'img/flower.png', nome: 'Pânico' },
+                    { linkfoto: 'img/flower.png', nome: 'Depressão' },
+                    { linkfoto: 'img/flower.png', nome: 'Insônia' },
+                    { linkfoto: 'img/flower.png', nome: 'Estresse' },
+                    { linkfoto: 'img/flower.png', nome: 'Transtorno Bipolar' },
+                ],
+            },
+            methods: {
+                onScroll() {
+                    $(window).scroll(function () {
+                        $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+                    });
+                },
+            },
+            mounted() {
+                this.onScroll()
+            }
+
+        });
+
+        new Vue({
+            el: '#depoimentos',
+            data: {
+                portfolios: [
+                    { linkfoto: 'img/flower.png', nome: 'Ansiedade' },
+                    { linkfoto: 'img/flower.png', nome: 'Pânico' },
+                    { linkfoto: 'img/flower.png', nome: 'Depressão' },
+                    { linkfoto: 'img/flower.png', nome: 'Insônia' },
+                    { linkfoto: 'img/flower.png', nome: 'Estresse' },
+                    { linkfoto: 'img/flower.png', nome: 'Transtorno Bipolar' },
+                ],
+            },
+            methods: {
+                onScroll() {
+                    $(window).scroll(function () {
+                        $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+                    });
+                },
+            },
+            mounted() {
+                this.onScroll()
+            }
+
+        });
+        new Vue({
+            el: '#form',
+            methods: {
+                enviarEmailForm() {
+                    var form = document.getElementById("form");
+                    function handleForm(event) { event.preventDefault(); }
+                    form.addEventListener('submit', handleForm);
+
+                    let inputNome = document.getElementById("inputNome").value
+                    let inputEmail = document.getElementById("inputEmail").value
+                    let taMensagem = document.getElementById("faMensagem").value
+                    let inputeTelefone = document.getElementById("inputTelefone").value
+
+
+                    if (inputNome != "" && inputEmail != "" && taMensagem != "" && inputeTelefone != "") {
+                        /* Fazendo a requisição */
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function () {
+                            swal("minerembryo", "Enviando...", "info");
+                            if (this.status === 204) {
+                                swal({
+                                    title: "Sucesso!",
+                                    text: "Seu email foi enviado com sucesso. Dentro de alguns dias nossa equipe vai estar entrando em contato. Obrigado.",
+                                    icon: "success",
+                                });
+                            } else if (this.readyState === 4) {
+                                swal("Ops!", "Algo deu errado. Tente novamente!", "warning");
+                            }
+                        };
+                        /* Se não cair em nenhuma das excessões, é feita a chamada para envio dos dados para o DBF. comercial@minerembryo.com.br*/
+                        xhttp.open("POST", "https://send-email-eworld.herokuapp.com/sendemail", true);
+                        xhttp.setRequestHeader("Content-type", " application/json; charset=UTF-8");
+                        /* Enviando os valores digitados no input */
+                        const body = {
+                            token: 'cfc96711-dd4f-4054-973d-828b068b83c7',
+                            from: inputEmail,
+                            body: `${inputNome}\n\n${inputeTelefone}\n\n${taMensagem}`
+                        }
+                        xhttp.send(JSON.stringify(body));
+                    } else {
+                        swal("Atenção!", "Existem campos vazios!", "warning");
+                    }
+                },
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+:root {
+  --background-color: #f4ece2;
+  --primary-color: #0c806b;
+  --secondary-color: #16d0a8;
+  --dark-blue: #085a50;
+}
+
+* {
+  font-family: "Literata", serif;
+}
+.navbar-fixed-top.scrolled {
+  background-color: var(--primary-color) !important;
+  transition: background-color 200ms linear;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background-color) !important;
+}
+
+body {
+  background-color: var(--background-color) !important;
+}
+
+/* FONTES */
+h1 {
+  margin-top: 20% !important;
+}
+h2 {
+  color: var(--dark-blue);
+  font-size: 35px !important;
+  font-weight: 700 !important;
+}
+h5 {
+  color: var(--secondary-color);
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}
+.cor-verde {
+  color: var(--secondary-color);
+}
+p {
+  color: grey;
+  font-size: 18px;
+}
+.btn-info {
+  border-radius: 80px !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: var(--dark-blue) !important;
+  font-family: "Literata", serif !important;
+  font-weight: 700 !important;
+  padding: 10px !important;
+}
+.btn-info:hover {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+  color: var(--secondary-color) !important;
+}
+
+/* NAVBAR */
+#image-navbar {
+  height: 22vh;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: -40px;
+  padding-bottom: 0px !important;
+}
+.text-color-all {
+  color: white;
+}
+.text-color {
+  color: white !important;
+}
+.text-color:hover {
+  color: white;
+  border-bottom: solid 1px var(--secondary-color);
+}
+/* HOME */
+#inicio {
+  height: 1080px;
+  background-image: url(../img/inicio.jpg);
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: contain;
+}
+/* TRATAMENTOS */
+#tratamentos h5 {
+  color: var(--dark-blue);
+}
+
+#servicos h2,
+h3 {
+  color: var(--dark-blue);
+}
+
+/* SOBRE */
+#sobre {
+  background-image: url("../img/fundo_sobre.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: contain;
+}
+#sobre-texto {
+  margin-left: 10%;
+}
+#sobre img {
+  margin-top: -1.5%;
+}
+#sobre-texto p {
+  color: white;
+}
+
+/* DEPOIMENTOS */
+.ic-depo {
+  height: 15vh;
+}
+.ic-star {
+  height: 5vh;
+}
+.border-radius-verde {
+  border-radius: 10%;
+  background-color: var(--primary-color);
+}
+/* CONOSCO */
+#fale-conosco {
+  background-color: var(--primary-color);
+}
+#doctoralia {
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+}
+#fale-conosco h4 {
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 20px;
+  width: 40%;
+  color: var(--dark-blue);
+}
+#fale-conosco a:hover {
+  color: var(--dark-blue);
+  text-decoration: none !important;
+}
+.h4-email {
+  width: 80% !important;
+}
+.text-azul {
+  color: blue;
+}
+.text-laranja {
+  color: #e6543c;
+}
+.form-control {
+  border-radius: 20px !important;
+}
+.ic-redes {
+  height: 5vh;
+}
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+}
+
+
+
+@media only screen and (min-width: 1600px)  {
+  #inicio {
+    height: 1080px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1599px) { 
+  #inicio {
+    height: 900px;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1279px) { 
+  #inicio {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+  #inicio {
+    height: 540px;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 767px) { 
+  #inicio {
+    height: 420px;
+  }
+}
+@media only screen and (max-width: 539px) { 
+  #inicio {
+    height: 300px;
+  }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* HOME */
+/*  #inicio {
+    height: 300px;
+    background-image: url(../img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+  }
+*/
+  /* NAVBAR */
+  #image-navbar {
+    height: 11vh;
+  }
+
+  h1 {
+    margin-top: 20% !important;
+    font-size: 0px !important;
+  }
+
+  #sobre img {
+    height: 0px !important;
+  }
+
+  #sobre {
+    background-image: url("../img/fundo sobre.jpg");
+    background-repeat: repeat;
+    background-position: initial;
+    background-size: contain;
+  }
+
+  #fale-conosco h4 {
+    width: 80% !important;
+  }
+
+  .h4-email {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  footer p {
+    font-size: 13px !important;
+  }
+  .p-redes {
+    font-size: 0px !important;
+  }
+  .ic-redes {
+    height: 0px !important;
+  }
+}
